@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobandit"
+version = "1.0.0"
+description = "Weight sensitivity in multi-objective bandits: Fixed-Weight vs. Pareto methods for NBA player selection"
+authors = [{ name = "Siyu Ren" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "numba>=0.58",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["mobandit"]
